@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+db:
+  host: localhost
+  port: 25432
+  username: socket_test
+  password: qwe123
+  database: socket_test
+  synchronize: true
+
+kakao:
+  adminKey: 4e182949b4ecb02262c3ddc3a445a786
