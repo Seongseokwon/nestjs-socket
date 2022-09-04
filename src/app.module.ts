@@ -5,6 +5,8 @@ import { AuthModule } from './auth/auth.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import config from './config/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { EventsModule } from './events/events.module';
+import { EventsGateway } from './events/events.gateway';
 
 @Module({
   imports: [
@@ -28,6 +30,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       }),
     }),
     AuthModule,
+    EventsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
